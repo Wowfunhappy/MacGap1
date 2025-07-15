@@ -13,6 +13,7 @@
 @class MenuProxy;
 @class UserDefaults;
 @class File;
+@class FolderPicker;
 
 @class WindowController;
 
@@ -29,6 +30,7 @@
     NSMenu *mainMenu;
     UserDefaults* userDefaults;
     File* file;
+    FolderPicker* folderPicker;
 }
 
 
@@ -45,6 +47,7 @@
 @property (nonatomic, retain) MenuProxy* menu;
 @property (nonatomic, retain) UserDefaults* userDefaults;
 @property (nonatomic, retain) File* file;
+@property (nonatomic, retain) FolderPicker* folderPicker;
 
 @property (nonatomic, retain) WindowController *requestedWindow;
 

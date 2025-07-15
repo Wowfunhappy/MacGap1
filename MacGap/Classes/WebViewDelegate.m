@@ -12,6 +12,7 @@
 #import "Fonts.h"
 #import "MenuProxy.h"
 #import "UserDefaults.h"
+#import "FolderPicker.h"
 
 
 #define MUTABLE_ARRAY_START_SIZE 10
@@ -31,6 +32,7 @@
 @synthesize fonts;
 @synthesize menu;
 @synthesize userDefaults;
+@synthesize folderPicker;
 
 - (id) initWithMenu:(NSMenu*)aMenu
 {
@@ -73,6 +75,10 @@
     
 	if (self.userDefaults == nil) {
         self.userDefaults = [[UserDefaults alloc] initWithWebView:webView];
+    }
+    
+    if (self.folderPicker == nil) {
+        self.folderPicker = [[FolderPicker alloc] initWithWebView:webView];
     }
     
     [windowScriptObject setValue:self forKey:kWebScriptNamespace];

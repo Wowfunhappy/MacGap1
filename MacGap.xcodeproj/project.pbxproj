@@ -19,8 +19,9 @@
 		88C0646014BDE10A00E4BCE2 /* Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C0645F14BDE10A00E4BCE2 /* Window.m */; };
 		88C0646614BDEC5800E4BCE2 /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C0646414BDEC5800E4BCE2 /* Window.xib */; };
 		88C0646D14BDF6A600E4BCE2 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C0646C14BDF6A600E4BCE2 /* WindowController.m */; };
-		F2B80016179E0FC100B069A8 /* Clipboard.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B80015179E0FC100B069A8 /* Clipboard.m */; };
 		88CAD87714D3C6A800B45DB2 /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CAD87614D3C6A800B45DB2 /* File.m */; };
+		AB781E2E2E27058B006E0719 /* FolderPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = AB781E2D2E27058B006E0719 /* FolderPicker.m */; };
+		F2B80016179E0FC100B069A8 /* Clipboard.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B80015179E0FC100B069A8 /* Clipboard.m */; };
 		FA32509D14BA813600BF0781 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA32509C14BA813600BF0781 /* WebKit.framework */; };
 		FA3250C314BA85E700BF0781 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3250BC14BA85E700BF0781 /* ContentView.m */; };
 		FA3250C514BA85E700BF0781 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3250BE14BA85E700BF0781 /* Utils.m */; };
@@ -78,10 +79,12 @@
 		88C0646514BDEC5800E4BCE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Window.xib; sourceTree = "<group>"; };
 		88C0646B14BDF6A600E4BCE2 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		88C0646C14BDF6A600E4BCE2 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
-		F2B80014179E0FC100B069A8 /* Clipboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clipboard.h; sourceTree = "<group>"; };
-		F2B80015179E0FC100B069A8 /* Clipboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clipboard.m; sourceTree = "<group>"; };
 		88CAD87514D3C6A800B45DB2 /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = File.h; path = Classes/Commands/File.h; sourceTree = "<group>"; };
 		88CAD87614D3C6A800B45DB2 /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = File.m; path = Classes/Commands/File.m; sourceTree = "<group>"; };
+		AB781E2C2E27058B006E0719 /* FolderPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FolderPicker.h; path = Classes/Commands/FolderPicker.h; sourceTree = "<group>"; };
+		AB781E2D2E27058B006E0719 /* FolderPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FolderPicker.m; path = Classes/Commands/FolderPicker.m; sourceTree = "<group>"; };
+		F2B80014179E0FC100B069A8 /* Clipboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clipboard.h; sourceTree = "<group>"; };
+		F2B80015179E0FC100B069A8 /* Clipboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clipboard.m; sourceTree = "<group>"; };
 		FA32509C14BA813600BF0781 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		FA32509E14BA816E00BF0781 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = MacGap/Growl.framework; sourceTree = "<group>"; };
 		FA3250BA14BA85E700BF0781 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/Constants.h; sourceTree = "<group>"; };
@@ -239,6 +242,8 @@
 				FA3250E014BA87B800BF0781 /* Classes */,
 				FAE451D014BA79C600190544 /* AppDelegate.h */,
 				FAE451D114BA79C600190544 /* AppDelegate.m */,
+				AB781E2C2E27058B006E0719 /* FolderPicker.h */,
+				AB781E2D2E27058B006E0719 /* FolderPicker.m */,
 				FAE451D314BA79C600190544 /* MainMenu.xib */,
 				88C0646414BDEC5800E4BCE2 /* Window.xib */,
 				FAE451C514BA79C600190544 /* Supporting Files */,
@@ -337,6 +342,7 @@
 				FA3250C514BA85E700BF0781 /* Utils.m in Sources */,
 				FA3250C714BA85E700BF0781 /* WebViewDelegate.m in Sources */,
 				FAE451CB14BA79C600190544 /* main.m in Sources */,
+				AB781E2E2E27058B006E0719 /* FolderPicker.m in Sources */,
 				6F169DB118CD906F005EDDF3 /* MenuItemProxy.m in Sources */,
 				FAE451D214BA79C600190544 /* AppDelegate.m in Sources */,
 				6F169DA718CC332E005EDDF3 /* Command.m in Sources */,
